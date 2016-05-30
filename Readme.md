@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Лариса Козяровская](https://up.htmlacademy.ru/adaptive/7/user/32887).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
 ---
 
