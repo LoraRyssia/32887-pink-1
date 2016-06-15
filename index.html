@@ -8,31 +8,23 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__mob-bar">
-          <div class="main-nav__wrap">
+      <div class="page-header_wrap">
+        <nav class="main-nav">
             <div class="main-nav__logo">
               <img src="img/logo.svg" width="" alt="Logo">
             </div>
             <button class="main-nav__toggler" type="button">
-              <span>Закрыть меню</span>
+              <span>Меню</span>
             </button>
           </div>
         </div>
-        <ul class="page-header__menu-list">
-          <li><a href="/">Главная</a></li>
-          <li><a href="/photos.html">Фотографии</a></li>
-          <li><a href="/competition.html">Конкурс</a></li>
-          <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__top">
-        <div class="page-header__wrap">
-          <a class="logo" href="/"><img src="img/logo.svg" width="" alt="Logo"></a>
-          <button class="page-header__toggler" type="button">
-            <span>Открыть меню</span>
-          </button>
-        </div>
+          <ul class="main-nav__menu-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/photos.html">Фотографии</a></li>
+            <li><a href="/competition.html">Конкурс</a></li>
+            <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -54,11 +46,11 @@
       <section class="advantages">
         <div class="advantages__intro">
           <div class="advantages__wrap">
-            <p>Устали от серости&nbspмегаполиса?</p>
-            <p>Нам есть, что вам&nbspпредложить!</p>
+            <span>Устали от серости&nbspмегаполиса?</span><br>
+            <span>Нам есть, что вам&nbspпредложить!</span>
           </div>
         </div>
-        <ul class="advantages__list advantages__wrap">
+        <ul class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__name">Поднимает настроение</p>
             <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -73,7 +65,7 @@
           </li>
         </ul>
       </section>
-      <section class="reviews">
+      <div class="reviews">
         <div class="revies_wrap slider">
           <div class="reviews__items">
             <blockquote class="reviews__item slider__item">
@@ -95,7 +87,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <section class="prices">
         <div class="slider">
           <div class="slider__table">
@@ -144,7 +136,7 @@
           </p>
           <p class="contacts__detail">
             <span>Пишите:</span><br>
-            mail@htmlacademy.ru
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="contacts__detail">
             <span>Приезжайте в гости:</span><br>
