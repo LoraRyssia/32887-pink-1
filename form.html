@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header_wrap">
+        <nav class="main-nav">
+            <div class="main-nav__logo">
+              <img src="img/logo.svg" width="" alt="Logo">
+            </div>
+            <button class="main-nav__toggler" type="button">
+              <span>Меню</span>
+            </button>
+          </div>
+        </div>
+          <ul class="main-nav__menu-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/photos.html">Фотографии</a></li>
+            <li><a href="/competition.html">Конкурс</a></li>
+            <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="page-title">
+        <div class="page-title__wrap">
+          <h1 class="page-title__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+        </div>
+      </div>
+      <section class="page-intro">
+        <div class="page-intro__wrap">
+          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        </div>
+      </section>
+      <form class="poll">
+        <fieldset class="poll__fset">
+          <div class="input-text">
+            <label for="last-name">Фамилия:</label>
+            <input class="input-text__field" type="text" id="last-name" placeholder="Укажите фамилию">
+          </div>
+          <div class="input-text">
+            <label for="name">Имя:</label>
+            <input  class="input-text__field" type="text" id="name" placeholder="Введите ваше имя">
+          </div>
+          <div class="input-text">
+            <label for="fname"></label>
+            <input  class="input-text__field" type="text" id="fname" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+        <fieldset class="poll__fset poll__fset--grey-bg">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <div class="checkbox">
+            <input class="checkbox__mark" type="checkbox" id="checkbox1" value="check1" checked>
+            <label for="checkbox1">Сделал селфи с акулой</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__mark" type="checkbox" id="checkbox2" value="check2" checked>
+            <label for="checkbox2">Обгорел на пляже</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__mark" type="checkbox" id="checkbox3" value="check3">
+            <label for="checkbox3">Видел Чака Норриса</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__mark" type="checkbox" id="checkbox4" value="check4">
+            <label for="checkbox4">Накупил сувениров</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__mark" type="checkbox" id="checkbox5" value="check5" checked>
+            <label for="checkbox5">Удержал башню</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__mark" type="checkbox" id="checkbox6" value="check6">
+            <label for="checkbox6">Разгромил отель</label>
+          </div>
+        </fieldset>
+        <fieldset class="poll__fset">
+          <div class="input-text">
+            <label for="phone">Номерок телефончика</label>
+            <input class="input-text__field" type="text" id="phone" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="input-text">
+            <label for="email">Адресок почты</label>
+            <input  class="input-text__field" type="email" id="email" placeholder="E-mail, пожалуйста">
+          </div>
+        </fieldset>
+        <fieldset class="poll__fset poll__fset--grey-bg">
+          <legend>С каким приложением путешествовали?</legend>
+          <div class="radio">
+            <input class="radio__btn" type="radio" id="radio1" name="appl-choice" value="choice1">
+            <label for="radio1">Pink для iOS</label>
+          </div>
+          <div class="radio">
+            <input class="radio__btn" type="radio" id="radio2" name="appl-choice" value="choice2">
+            <label for="radio2">Pink на Android</label>
+          </div>
+          <div class="radio">
+            <input class="radio__btn" type="radio" id="radio3" name="appl-choice" value="choice3">
+            <label for="radio3">Windows Phone</label>
+          </div>
+        </fieldset>
+        <fieldset class="poll__fset">
+          <legend>Опишите свои эмоции</legend>
+          <textarea class="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <input class="btn poll__submit" type="submit" name="form-submit" value="Отправить форму">
+          <p class="poll__detail">* — обязательные поля</p>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <p class="page-footer__logo">
+          <a class="logo logo--footer" href="/"><img src="img/logo.svg" width=""></a>
+        </p>
+        <p class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link social-link--twit" href="">Мы в Твиттере</a>
+            <a class="social-link social-link--fb" href="">Мы на Фейсбуке</a>
+            <a class="social-link social-link--yt" href="">Мы на Ютуб</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">
+          Разработано <a class="logo-copyright" href=""><img src="img/logo-small.svg"></a>
+        </p>
+      </div>
+    </footer>
+  
+
+  </body>
+</html>
