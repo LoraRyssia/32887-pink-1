@@ -8,16 +8,16 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header_wrap">
-        <nav class="main-nav">
-            <div class="main-nav__logo">
-              <img src="img/logo.svg" width="" alt="Logo">
-            </div>
-            <button class="main-nav__toggler" type="button">
-              <span>Меню</span>
-            </button>
-          </div>
+      <div class="page-header__wrap">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="/">
+            <img src="img/logo.svg" width="" alt="Logo">
+          </a>
         </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggler" type="button">
+            <span>Меню</span>
+          </button>
           <ul class="main-nav__menu-list">
             <li><a href="/">Главная</a></li>
             <li><a href="/photos.html">Фотографии</a></li>
@@ -26,18 +26,14 @@
           </ul>
         </nav>
       </div>
+      <div class="page-header__title">
+        <h1 class="page-header__text">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      </div>
     </header>
     <main>
-      <div class="page-title">
-        <div class="page-title__wrap">
-          <h1 class="page-title__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-        </div>
+      <div class="page-intro">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
-      <section class="page-intro">
-        <div class="page-intro__wrap">
-          <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        </div>
-      </section>
       <form class="poll">
         <fieldset class="poll__fset">
           <div class="input-text">
@@ -130,7 +126,5 @@
         </p>
       </div>
     </footer>
-  
-
   </body>
 </html>
