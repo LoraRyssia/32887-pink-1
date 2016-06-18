@@ -1,0 +1,66 @@
+//
+// Form
+// --------------------------------------------------
+
+.poll {
+  
+  &__fset {
+
+    &--grey-bg {
+
+    }
+
+    & legend {
+      line-height: $line-height-small;
+      color: $color-pink;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.input-text {
+  
+  & label {
+    line-height: $line-height-small;
+    color: $color-pink;
+    text-transform: uppercase;
+  }
+
+  &__field {
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    color: $color-dark2;
+
+    & placeholder {
+      font-size: $font-size-large;
+      line-height: $line-height-large;
+      color: $color-dark2;
+    }
+  }
+
+
+}
+
+.checkbox {
+
+  & label {
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+  }
+
+  &__mark {
+
+  }
+}
+
+.radio {
+  
+  &__btn {
+
+  }
+
+  & label {
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+  }
+}

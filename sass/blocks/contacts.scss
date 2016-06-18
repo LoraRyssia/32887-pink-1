@@ -1,0 +1,42 @@
+//
+// Contacts
+// --------------------------------------------------
+
+.contacts {
+    padding: 40px 0 0 0;
+
+  &__wrap {
+
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    fint-weight: 300;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+  }
+
+  &__detail {
+    font-weight: 300;
+    font-size: $font-size-larger;
+    color: $color-pink;
+
+    & span {
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $font-size-large;
+      line-height: $line-height-large;
+      color: $font-color-base;
+    }
+  }
+
+  &__map {
+    height: 235px;
+    text-align: center;
+    background-image: url(../img/bg-map-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

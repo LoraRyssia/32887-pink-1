@@ -1,0 +1,51 @@
+//
+// Photo
+// --------------------------------------------------
+
+.photo-blog {
+	
+	&__wrap {
+	
+	}
+}
+
+.photo {
+	margint-bottom: 20px;
+
+	&__img {
+
+		& img {
+
+		}
+
+		&--featured {
+
+		}
+
+		&__label {
+
+		}
+	}
+
+	&__info {
+		line-height: $line-height-base;
+		background-color: $color-bg--grey;
+	}
+
+	&__author {
+		font-weight: 700;
+	}
+
+	&__date {
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__comment {
+
+	}
+
+	&__meta {
+
+	}
+}

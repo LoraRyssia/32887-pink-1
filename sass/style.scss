@@ -1,0 +1,22 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/scaffolding.scss";
+@import "global/fonts.scss";
+@import "global/type.scss";
+@import "global/buttons.scss";
+@import "global/forms.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+@import "blocks/prices.scss";
+@import "blocks/social.scss";
+@import "blocks/contacts.scss";
+@import "blocks/like.scss";
+@import "blocks/photo.scss";
+@import "blocks/photo-edit.scss";

@@ -1,0 +1,31 @@
+//
+// Reviews
+// --------------------------------------------------
+
+.reviews {
+  padding: 40px 0;
+  
+  &__wrap {
+
+  }
+
+  &__items {
+    text-align: center;
+  }
+
+  &__item {
+
+  }
+
+  &__author {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+  }
+
+  & p {
+
+  }
+}
