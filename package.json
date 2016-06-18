@@ -22,7 +22,7 @@
     "gulp-sass": "2.3.1"
   },
   "scripts": {
-    "test": "editorconfig-tools check *",
+    "test": "node_modules/.bin/editorconfig-tools check *",
     "build": "gulp style",
     "start": "gulp serve"
   },
