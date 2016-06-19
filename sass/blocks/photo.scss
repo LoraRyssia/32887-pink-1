@@ -2,50 +2,43 @@
 // Photo
 // --------------------------------------------------
 
-.photo-blog {
-	
-	&__wrap {
-	
-	}
-}
 
 .photo {
-	margint-bottom: 20px;
+  margint-bottom: 20px;
 
-	&__img {
+  &__img {
 
-		& img {
+    img {
 
-		}
+    }
 
-		&--featured {
+    &--featured {
 
-		}
+    }
 
-		&__label {
+    &__label {
 
-		}
-	}
+    }
+  }
 
-	&__info {
-		line-height: $line-height-base;
-		background-color: $color-bg--grey;
-	}
+  &__info {
+    background-color: $color-bg--grey;
+  }
 
-	&__author {
-		font-weight: 700;
-	}
+  &__author {
+    font-weight: 700;
+  }
 
-	&__date {
-		font-weight: 400;
-		text-transform: uppercase;
-	}
+  &__date {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 
-	&__comment {
+  &__comment {
 
-	}
+  }
 
-	&__meta {
+  &__meta {
 
-	}
+  }
 }

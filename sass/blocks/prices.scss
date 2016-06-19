@@ -3,34 +3,34 @@
 // --------------------------------------------------
 
 .prices {
-	padding: 60px 0 40px;
-	background-color: $color-bg--grey;
+  padding: 60px 0 40px;
+  background-color: $color-bg--grey;
 }
 
 .price-table {
-	text-transform: uppercase;
+  text-transform: uppercase;
 
-	& thead {
-		text-align: center;
-		color: $color-white;
-		background-color: $color-dark2;
-	}
+  thead {
+    text-align: center;
+    color: $color-white;
+    background-color: $color-dark2;
+  }
 
-	&__header {
-		border: 2px solid $border-color;
+  &__header {
+    border: 2px solid $border-color;
 
-		&--hit {
+    &--hit {
 
-		}
-	}
+    }
+  }
 
-	& td {
-		border: 2px solid $border-color;
-	}
+  td {
+    border: 2px solid $border-color;
+  }
 
 }
 
 .price-yes,
 .price-no {
-	font-size: 0;
+  font-size: 0;
 }

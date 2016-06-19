@@ -2,38 +2,23 @@
 // Form
 // --------------------------------------------------
 
-.poll {
-  
-  &__fset {
-
-    &--grey-bg {
-
-    }
-
-    & legend {
-      line-height: $line-height-small;
-      color: $color-pink;
-      text-transform: uppercase;
-    }
-  }
-}
-
 .input-text {
   
-  & label {
-    line-height: $line-height-small;
+  label {
+    font-size: $font-size-base;
+    line-height: 1.285em;
     color: $color-pink;
     text-transform: uppercase;
   }
 
   &__field {
     font-size: $font-size-large;
-    line-height: $line-height-large;
+    line-height: 1.7em;
     color: $color-dark2;
 
-    & placeholder {
+    placeholder {
       font-size: $font-size-large;
-      line-height: $line-height-large;
+      line-height: 1.7em;
       color: $color-dark2;
     }
   }
@@ -43,9 +28,9 @@
 
 .checkbox {
 
-  & label {
+  label {
     font-size: $font-size-large;
-    line-height: $line-height-large;
+    line-height: 1.7em;
   }
 
   &__mark {
@@ -59,8 +44,8 @@
 
   }
 
-  & label {
+  label {
     font-size: $font-size-large;
-    line-height: $line-height-large;
+    line-height: 1.7em;
   }
 }
