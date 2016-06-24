@@ -4,7 +4,37 @@
 
 .photo-blog {
   
+
   &__wrap {
-  
+    padding: 0 20px;
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      width: 620px;
+      padding: 0 40px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+
+    }
+  }
+
+  &__slogan {
+    padding: 50px 0;
+    line-height: 2.1em;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      padding: 55px 0px 65px;
+      font-size: 18px;
+      line-height: 1.7em;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 45px 0px 65px;
+    }
   }
 }

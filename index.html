@@ -8,29 +8,29 @@
     <title>Pink</title>
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__wrap">
-        <div class="page-header__top">
+    <header class="page-header page-header--frontpage">
+      <div class="page-header__top">
+        <div class="page-header__wrap">
           <a class="page-header__logo" href="/">
-            <img src="img/logo.svg" width="" alt="Logo">
+            <img src="img/logo-pink-white-mobile.svg" width="" alt="Logo">
           </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggler" type="button">
+              <span>Меню</span>
+            </button>
+            <ul class="main-nav__menu-list">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/photos.html">Фотографии</a></li>
+              <li><a href="/competition.html">Конкурс</a></li>
+              <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggler" type="button">
-            <span>Меню</span>
-          </button>
-          <ul class="main-nav__menu-list">
-            <li><a href="/">Главная</a></li>
-            <li><a href="/photos.html">Фотографии</a></li>
-            <li><a href="/competition.html">Конкурс</a></li>
-            <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="page-header__promo">
         <div class="page-header__pict"></div>
-        <div class="page-header__wrap">
           <div class="promo">
+            <div class="promo__slogan">Взгляните на жизнь иначе!</div>
             <a class="btn link-download" href="#">Скачать приложение</a>
             <div class="apps-list">
               <div class="apps-icon apps-icon--apple"><span>Apple</span></div>
@@ -38,7 +38,6 @@
               <div class="apps-icon apps-icon--win"><span>Windows</span></div>
             </div>
             <p class="promo__text">Доступно для iPhone, iPad, Android,&nbspWindows Phone, OS X, Windows 8</p>
-          </div>
         </div>
       </div>
     </header>
@@ -46,27 +45,38 @@
       <section class="advantages">
         <div class="advantages__intro">
           <div class="advantages__wrap">
-            <span>Устали от серости&nbspмегаполиса?</span><br>
-            <span>Нам есть, что вам&nbspпредложить!</span>
+            <p>Устали от серости&nbspмегаполиса?</p>
+            <p>Нам есть, что вам<br>предложить!</p>
           </div>
         </div>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <p class="advantages__name">Поднимает настроение</p>
-            <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__name">Меняет мир вокруг</p>
-            <p class="advantages__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <p class="advantages__name">Заводит новых друзей</p>
-            <p class="advantages__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="advantages__bg">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p class="advantages__name">Поднимает настроение</p>
+              <p class="advantages__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__name">Меняет мир вокруг</p>
+              <p class="advantages__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__name">Заводит новых друзей</p>
+              <p class="advantages__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__bg">
+          <div class="advantages__wrap">
+            <div class="advantages__time">
+              <div class="advantages__name advantages__name--big">Эффект на 24 часа!</div>
+              <p class="advantages__descr">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a href="">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </div>
       </section>
       <div class="reviews">
-        <div class="revies__wrap slider">
+        <div class="reviews__wrap slider">
           <div class="reviews__items">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author">Николай Петров</cite>
@@ -89,7 +99,7 @@
         </div>
       </div>
       <section class="prices">
-        <div class="slider">
+        <div class="prices__wrap slider">
           <div class="slider__table">
             <table class="price-table">
               <thead>
@@ -146,6 +156,23 @@
         <div class="contacts__map">
         </div>
       </section>
+      <footer class="page-footer page-footer--frontpage">
+        <div class="page-footer__wrap">
+          <p class="page-footer__logo">
+            <a class="logo logo--footer" href="/"><img src="img/logo-pink-blue-mobile.svg" width=""></a>
+          </p>
+          <p class="page-footer__social">
+            <span class="social-links">
+              <a class="social-link social-link--twit" href="">Мы в Твиттере</a>
+              <a class="social-link social-link--fb" href="">Мы на Фейсбуке</a>
+              <a class="social-link social-link--yt" href="">Мы на Ютуб</a>
+            </span>
+          </p>
+          <p class="page-footer__copyright">
+            Разработано <a class="logo-copyright" href=""><img src="img/logo-htmlacademy.svg"></a>
+          </p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

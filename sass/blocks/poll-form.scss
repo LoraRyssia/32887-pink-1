@@ -4,18 +4,140 @@
 
 
 .poll {
-  
+  margin-bottom: 40px;
+
   &__fset {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    border-width: 0;
+    box-sizing: border-box;
 
-    &--grey-bg {
-
+    @media (min-width: $screen-md) {
+      margin-bottom: 55px;
+      padding: 35px 60px;
+      border: 2px solid $border-color;
+      border-radius: 3px;
     }
 
-    & legend {
+    @media (min-width: $screen-lg) {
+      
+    }
+
+    &--mob {
+
+      @media (min-width: $screen-sm) {
+        display: none;
+      }
+    }
+
+     &--md {
+
+      @media (max-width: $screen-sm) {
+        display: none;
+      }
+    }
+
+    &--grey-bg {
+      @media (max-width: $screen-md) {
+        background-color: $color-bg--grey;
+      }
+    }
+
+    &--personal {
+
+      @media (min-width: $screen-md) {
+        border-width: 0;
+        border-radius: 0;
+        padding: 0;
+      }
+
+      @media (min-width: $screen-lg) {
+        float: left;
+        width: 49%;
+        padding-right: 35px;
+        box-sizing: border-box;
+      }
+    }
+
+    &--apps {
+
+      @media (max-width: $screen-md) {
+        display: none;
+      }
+
+      @media (min-width: $screen-lg) {
+        float: right;
+        width: 49%;
+      }
+    }
+
+    legend {
+      padding: 0px;
       font-size: $font-size-base;
       line-height: 1.285em;
       color: $color-pink;
+      text-align: center;
       text-transform: uppercase;
+
+      @media (min-width: $screen-md) {
+        padding: 0 25px;
+      }
     }
+
+  }
+
+  &__top-lg {
+
+    &:after {
+
+      @media (min-width: $screen-lg) {
+        display: table;
+        content: '';
+        clear: both;
+      }
+    }
+
+  }
+
+  &__btn {
+    padding: 0 20px;
+
+    &:after {
+
+      @media (min-width: $screen-md) {
+        display: table;
+        content: none;
+        clear: both;
+      }
+    }
+  }
+
+  &__submit {
+
+    @media (min-width: $screen-md) {
+      float: left;
+
+    }
+  }
+
+&__detail {
+
+    @media (min-width: $screen-md) {
+      float: right;
+
+    }
+  }
+
+
+  @media (min-width: $screen-lg) {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    width: 620px;
+    margin: 0 auto;
   }
 }

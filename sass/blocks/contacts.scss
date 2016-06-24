@@ -4,9 +4,19 @@
 
 .contacts {
     padding: 40px 0 0 0;
+    text-align: center;
 
   &__wrap {
 
+    @media (min-width: $screen-sm) and (max-width: $screen-lg) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -15,12 +25,34 @@
     font-weight: 300;
     font-size: $font-size-larger;
     line-height: 1.25em;
+
+    @media (min-width: $screen-sm){
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 50px;
+    }
   }
 
   &__detail {
     font-weight: 300;
     font-size: $font-size-larger;
     color: $color-pink;
+
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 33%;
+      text-align: center;
+    }
 
     span {
       margin-bottom: 10px;
@@ -38,5 +70,13 @@
     background-image: url(../img/bg-map-mobile@1x.png);
     background-repeat: no-repeat;
     background-position: center center;
+
+    @media (min-width: $screen-md) {
+      height: 380px;
+    }
+
+    @media (min-width: $screen-lg) {
+      height: 500px;
+    }
   }
 }

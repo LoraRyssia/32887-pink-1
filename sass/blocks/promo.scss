@@ -1,0 +1,35 @@
+//
+// Promo
+// --------------------------------------------------
+
+.promo {
+
+  text-align: center;
+
+  @media (min-width: $screen-sm) {
+    float: left;
+    width: 285px;
+    padding-top: 100px;
+    box-sizing: border-box;
+
+    }
+  
+  &__slogan {
+    display: none;
+    font-weight: 300;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 40px;
+      line-height: 1.2em;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+      font-size: 50px;
+      
+
+    }
+  }
+}

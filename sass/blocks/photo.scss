@@ -4,25 +4,78 @@
 
 
 .photo {
-  margint-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: $color-bg--grey;
+
 
   &__img {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 
-    img {
+    @media (min-width: $screen-md) {
+      height: 300px;
+    }
 
+    @media (min-width: $screen-lg) {
+      height: 400px;
     }
 
     &--featured {
-
+      position: relative;
     }
+
+    img {
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+
+      @media (min-width: $screen-lg) {
+        
+      }
+    }
+
+  }
 
     &__label {
+      position: absolute;
+      color: #fff;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: $color-pink;
 
-    }
+      @media (min-width: $screen-lg) {
+        top: 50px;
+        right: 130px;
+        padding: 10px 20px;
+
+      }
+
   }
 
   &__info {
-    background-color: $color-bg--grey;
+    padding: 15px;
+    
+    &--featured {
+      background-color: $color-bg--grey;
+    }
+
+
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+        padding: 20px;
+
+
+      }
+    
+    @media (min-width: $screen-lg) {
+        padding: 25px;
+
+
+      }
   }
 
   &__author {
@@ -40,5 +93,48 @@
 
   &__meta {
 
+  }
+
+  @media (min-width: $screen-md) {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 450px;
+    margin: 0 15px 15px 0;
+    }
+
+  @media (min-width: $screen-lg) {
+    width: 300px;
+    height: 555px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  &--featured {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      width: 1200px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+
+    }
+  }
+
+  &:nth-child(2n+2) {
+    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+      margin-right: 0;
+
+    }
+  }
+
+  &:nth-child(3n+3) {
+    @media (min-width: $screen-lg) {
+      margin-right: 0;
+
+    }
   }
 }
