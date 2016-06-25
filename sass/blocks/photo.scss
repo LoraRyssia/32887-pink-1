@@ -2,12 +2,10 @@
 // Photo
 // --------------------------------------------------
 
-
 .photo {
   width: 100%;
   margin-bottom: 20px;
   background-color: $color-bg--grey;
-
 
   &__img {
     width: 100%;
@@ -36,7 +34,6 @@
         
       }
     }
-
   }
 
     &__label {
@@ -52,30 +49,23 @@
         top: 50px;
         right: 130px;
         padding: 10px 20px;
-
       }
-
   }
 
   &__info {
     padding: 15px;
-    
+
     &--featured {
       background-color: $color-bg--grey;
     }
 
-
-    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    @media (min-width: $screen-md) {
         padding: 20px;
+    }
 
-
-      }
-    
     @media (min-width: $screen-lg) {
         padding: 25px;
-
-
-      }
+    }
   }
 
   &__author {
@@ -120,21 +110,18 @@
       width: 1200px;
       margin: 0 auto;
       margin-bottom: 50px;
-
     }
   }
 
   &:nth-child(2n+2) {
-    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       margin-right: 0;
-
     }
   }
 
   &:nth-child(3n+3) {
     @media (min-width: $screen-lg) {
       margin-right: 0;
-
     }
   }
 }

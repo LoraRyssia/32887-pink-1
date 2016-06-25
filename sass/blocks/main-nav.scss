@@ -30,8 +30,8 @@
       &:last-child {
 
         @media (min-width: $screen-lg) {
-        margin-right: 0;
-      }
+          margin-right: 0;
+        }
       }
 
       a {
@@ -40,8 +40,8 @@
     }
 
     @media (min-width: $screen-lg) {
-        display: block;
-      }
+      display: block;
+    }
   }
 
 }

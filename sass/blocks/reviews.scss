@@ -4,10 +4,10 @@
 
 .reviews {
   padding: 40px 0;
-  
+
   &__wrap {
   
-    @media (min-width: $screen-sm) and (max-width: $screen-lg) {
+    @media (min-width: $screen-sm) {
       padding: 0 40px;
     }
 

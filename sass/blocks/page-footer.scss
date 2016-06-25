@@ -5,20 +5,17 @@
 .page-footer {
   padding-top: 30px;
 
-  &--frontpage {
+  &--main-page {
     display: none;
 
     @media (min-width: $screen-sm) {
       display: block;
     }
-
   }
-  
+
   &__wrap {
 
-
-
-    @media (min-width: $screen-sm) and (max-width: $screen-lg) {
+    @media (min-width: $screen-sm) {
       padding: 0 40px;
 
       &:after {
@@ -49,7 +46,6 @@
       float: left;
       width: 33%;
     }
-    
   }
 
   &__social {
@@ -60,7 +56,6 @@
       float: left;
       width: 33%;
     }
-    
   }
 
   &__copyright {
@@ -71,7 +66,6 @@
       width: 33%;
       text-align: right;
     }
-    
   }
 
   @media (min-width: $screen-sm) {

@@ -84,7 +84,6 @@
         padding: 0 25px;
       }
     }
-
   }
 
   &__top-lg {
@@ -97,7 +96,6 @@
         clear: both;
       }
     }
-
   }
 
   &__btn {
@@ -117,7 +115,6 @@
 
     @media (min-width: $screen-md) {
       float: left;
-
     }
   }
 
@@ -125,19 +122,17 @@
 
     @media (min-width: $screen-md) {
       float: right;
-
     }
   }
 
+  @media (min-width: $screen-md) {
+    width: 620px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $screen-lg) {
     width: 940px;
     padding: 0 130px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $screen-md) and (max-width: $screen-lg) {
-    width: 620px;
     margin: 0 auto;
   }
 }

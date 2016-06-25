@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center top;
 
-    &--frontpage {
+    &--main-page {
 
       @media (min-width: $screen-lg) {
         height: 850px;
@@ -18,21 +18,21 @@
 
     &__wrap {
 
-    &:after {
-      display: table;
-      content: '';
-      clear: both;
-    }
+      &:after {
+        display: table;
+        content: '';
+        clear: both;
+      }
 
-    @media (min-width: $screen-sm) and (max-width: $screen-lg) {
-      padding: 0 40px;
-    }
+      @media (min-width: $screen-sm) {
+        padding: 0 40px;
+      }
 
-    @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
-    }
+      @media (min-width: $screen-lg) {
+        width: 940px;
+        padding: 0 130px;
+        margin: 0 auto;
+      }
   }
 
   &__top {
@@ -62,7 +62,7 @@
       }
     }
 
-    @media (min-width: $screen-sm) and (max-width: $screen-lg) {
+    @media (min-width: $screen-sm) {
       padding: 0 40px;
     }
 
@@ -70,10 +70,7 @@
       width: 940px;
       padding: 0 130px;
       margin: 0 auto;
-
-      
     }
-
   }
 
   &__pict {
@@ -83,7 +80,6 @@
     background-repeat: no-repeat;
     background-position: left bottom;
 
-
     @media (min-width: $screen-sm) {
       float: right;
       width: 50%;
@@ -92,7 +88,6 @@
 
     @media (min-width: $screen-lg) {
       width: 60%;
-
     }
   }
 
@@ -111,5 +106,4 @@
     font-weight: 300;
   }
 
-  
 }

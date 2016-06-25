@@ -9,11 +9,10 @@
   &__wrap {
     padding: 0 20px;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       width: 620px;
       margin: 0 auto;
     }
-
   }
 
 
@@ -24,7 +23,6 @@
       float: left;
       width: 45%;
       margin-right: 10%;
-
     }
 
     @media (min-width: $screen-lg) {
@@ -33,12 +31,10 @@
 
     img {
       max-width: 100%;
-
     }
 
     input {
       max-width: 100%;
-
     }
   }
 
@@ -51,7 +47,6 @@
     @media (min-width: $screen-md) {
       float: right;
       width: 45%;
-
     }
   }
 
@@ -60,7 +55,6 @@
     @media (max-width: $screen-sm) {
       text-align: center;
     }
-
   }
 
   &__range {
@@ -76,7 +70,7 @@
   }
 
   @media (min-width: $screen-md) {
-    
+
     &:after {
       display: table;
       content: '';
@@ -87,7 +81,6 @@
   @media (min-width: $screen-md) {
     width: 100%;
     padding: 55px 0;
-
   }
 
   @media (min-width: $screen-lg) {

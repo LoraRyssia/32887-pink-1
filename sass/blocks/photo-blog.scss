@@ -3,12 +3,11 @@
 // --------------------------------------------------
 
 .photo-blog {
-  
 
   &__wrap {
     padding: 0 20px;
 
-    @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       width: 620px;
       padding: 0 40px;
       margin: 0 auto;
@@ -18,7 +17,6 @@
       width: 940px;
       padding: 0 130px;
       margin: 0 auto;
-
     }
   }
 
