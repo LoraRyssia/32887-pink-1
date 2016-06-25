@@ -14,11 +14,11 @@
       line-height: 1.25em;
 
       @media (min-width: $screen-sm) {
-        font-size: 40px;
+        font-size: $font-heading-large;
       }
 
       @media (min-width: $screen-lg) {
-        font-size: 50px;
+        font-size: $font-heading-larger;
       }
     }
   }
@@ -88,7 +88,7 @@
     &--big {
       margin-bottom: 20px;
       font-size: $font-size-larger;
-      lin-height: 1em;
+      line-height: 1em;
     }
   }
 
