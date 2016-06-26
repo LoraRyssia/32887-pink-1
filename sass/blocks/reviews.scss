@@ -4,9 +4,18 @@
 
 .reviews {
   padding: 40px 0;
-  
-  &__wrap {
 
+  &__wrap {
+  
+    @media (min-width: $screen-sm) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+    }
   }
 
   &__items {

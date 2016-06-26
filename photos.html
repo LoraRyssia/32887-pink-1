@@ -9,23 +9,23 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrap">
-        <div class="page-header__top">
+      <div class="page-header__top">
+        <div class="page-header__wrap">
           <a class="page-header__logo" href="/">
-            <img src="img/logo.svg" width="" alt="Logo">
+            <img src="img/logo-pink-white-mobile.svg" width="" alt="Logo">
           </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggler" type="button">
+              <span>Меню</span>
+            </button>
+            <ul class="main-nav__menu-list">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/photos.html">Фотографии</a></li>
+              <li><a href="/competition.html">Конкурс</a></li>
+              <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggler" type="button">
-            <span>Меню</span>
-          </button>
-          <ul class="main-nav__menu-list">
-            <li><a href="/">Главная</a></li>
-            <li><a href="/photos.html">Фотографии</a></li>
-            <li><a href="/competition.html">Конкурс</a></li>
-            <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="page-header__title">
         <h1 class="page-header__text">Фотографии пользователей</h1>
@@ -33,20 +33,22 @@
     </header>
     <main>
       <div class="page-intro">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p>Взгляните на фотографии, которые выкладывают пользователи!<br>  Видите, как не хватает ваших?</p>
       </div>
       <section class="photo-blog">
-        <article class="photo">
+        <article class="photo photo--featured">
           <div class="photo__img photo__img--featured">
             <div class="photo__label">ПАНОРАМА ДНЯ</div>
-            <img src="http://placehold.it/150x100">
+            <img src="img/panorama-mobile@1x.jpg">
           </div>
-          <div class="photo__info">
-            <div class="photo__author">Анна <time class="photo__date" datetime="">(5 минут назад)</time></div>
-            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-            <div class="photo__meta">
-              <div class="like">
-                <a class="like__counter"><i class="icon icon--heart"></i></a> Нравится: <span class="like__result">215</span>
+          <div class="photo-blog__wrap">
+            <div class="photo__info photo__info--featured">
+              <div class="photo__author">Анна <time class="photo__date" datetime="">(5 минут назад)</time></div>
+              <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <div class="photo__meta">
+                <div class="like">
+                  <a class="like__counter"><i class="icon icon--heart"></i></a> Нравится: <span class="like__result">215</span>
+                </div>
               </div>
             </div>
           </div>
@@ -54,7 +56,7 @@
         <div class="photo-blog__wrap">
           <article class="photo">
             <div class="photo__img">
-              <img src="http://placehold.it/150x100">
+              <img src="img/photo-1-mobile@1x.jpg">
             </div>
             <div class="photo__info">
               <div class="photo__author">Левон <time class="photo__date" datetime="">(5 часов назад)</time></div>
@@ -68,7 +70,7 @@
           </article>
           <article class="photo">
             <div class="photo__img">
-              <img src="http://placehold.it/150x100">
+              <img src="img/photo-2-mobile@1x.jpg">
             </div>
             <div class="photo__info">
               <div class="photo__author">Антон <time class="photo__date" datetime="">(12 часов назад)</time></div>
@@ -82,7 +84,7 @@
           </article>
           <article class="photo">
             <div class="photo__img">
-              <img src="http://placehold.it/150x100">
+              <img src="img/photo-3-mobile@1x.jpg">
             </div> 
             <div class="photo__info">
               <div class="photo__author">Борис <time class="photo__date" datetime="">(20 часов назад)</time></div>
@@ -96,7 +98,7 @@
           </article>
           <article class="photo">
             <div class="photo__img">
-              <img src="http://placehold.it/150x100">
+              <img src="img/photo-4-mobile@1x.jpg">
             </div> 
             <div class="photo__info">
               <div class="photo__author">Сергей <time class="photo__date" datetime="">(25 часов назад)</time></div>
@@ -110,7 +112,7 @@
           </article>
           <article class="photo">
             <div class="photo__img">
-              <img src="http://placehold.it/150x100">
+              <img src="img/photo-5-mobile@1x.jpg">
             </div> 
             <div class="photo__info">
               <div class="photo__author">Максим <time class="photo__date" datetime="">(40 часов назад)</time></div>
@@ -124,7 +126,7 @@
           </article>
           <article class="photo">
             <div class="photo__img">
-              <img src="http://placehold.it/150x100">
+              <img src="img/photo-6-mobile@1x.jpg">
             </div> 
             <div class="photo__info">
               <div class="photo__author">Надежда <time class="photo__date" datetime="">(45 часов назад)</time></div>
@@ -136,32 +138,40 @@
               </div>
             </div>
           </article>
-          <p class="photo-blog__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="photo-blog__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
-      <section class="photo-edit">
+      <form class="photo-edit">
         <div class="photo-edit__wrap">
           <div class="photo-edit__img">
-            <img src="http://placehold.it/150x100">
+            <img src="img/photo-7-mobile@1x.jpg">
           </div>
-          <div class="photo-edit__tools">
-            <button class="edit-tool edit-tool--resize" type="button"><span>Обрезать</span></button>
-            <button class="edit-tool edit-tool--filter" type="button"><span>Фильтр</span></button>
-            <button class="edit-tool edit-tool--contrast" type="button"><span>Конраст</span></button>
-            <input class="range photo-edit__range" type="range">
+          <div class="photo-edit__panel">
+            <div class="photo-edit__tools">
+              <div class="photo-edit__tool">
+                <button class="edit-tool edit-tool--resize" type="button"><span>Обрезать</span></button>
+                <input class="range photo-edit__range" type="range">
+              </div>
+              <div class="photo-edit__tool">
+                <button class="edit-tool edit-tool--filter" type="button"><span>Фильтр</span></button>
+                <input class="range photo-edit__range" type="range">
+              </div>
+              <div class="photo-edit__tool">
+                <button class="edit-tool edit-tool--contrast" type="button"><span>Конраст</span></button>
+                <input class="range photo-edit__range" type="range">
+              </div>
+            </div>
+            <div class="photo-edit__btns">
+              <button class="btn btn--post" type="button">Запостить</button>
+              <button class="btn btn--cancel" type="button">Отмена</button>
+            </div>
           </div>
         </div>
-        <div class="photo-edit__btns">
-          <div class="photo-edit__wrap">
-            <button class="btn btn-post btn-post--active" type="button">Запостить</button>
-            <button class="btn btn-cancel" type="button">Отмена</button>
-          </div>
-        </div>
-      </section>
+      </form>
       <footer class="page-footer">
         <div class="page-footer__wrap">
           <p class="page-footer__logo">
-            <a class="logo logo--footer" href="/"><img src="img/logo.svg" width=""></a>
+            <a class="logo logo--footer" href="/"><img src="img/logo-pink-blue-mobile.svg" width=""></a>
           </p>
           <p class="page-footer__social">
             <span class="social-links">
@@ -171,7 +181,7 @@
             </span>
           </p>
           <p class="page-footer__copyright">
-            Разработано <a class="logo-copyright" href=""><img src="img/logo-small.svg"></a>
+            Разработано <a class="logo-copyright" href=""><img src="img/logo-htmlacademy.svg"></a>
           </p>
         </div>
       </footer>

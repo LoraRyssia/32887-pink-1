@@ -3,21 +3,58 @@
 // --------------------------------------------------
 
 .photo-edit {
+  padding: 20px 0 40px;
   background-color: $color-bg--grey;
 
   &__wrap {
+    padding: 0 20px;
 
+    @media (min-width: $screen-md) {
+      width: 620px;
+      margin: 0 auto;
+    }
   }
 
+
   &__img {
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      float: left;
+      width: 45%;
+      margin-right: 10%;
+    }
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
+    }
 
     img {
+      max-width: 100%;
+    }
 
+    input {
+      max-width: 100%;
+    }
+  }
+
+  &__panel {
+
+    @media (max-width: $screen-sm) {
+      text-align: center;
+    }
+
+    @media (min-width: $screen-md) {
+      float: right;
+      width: 45%;
     }
   }
 
   &__tools {
 
+    @media (max-width: $screen-sm) {
+      text-align: center;
+    }
   }
 
   &__range {
@@ -26,5 +63,30 @@
 
   &__btns {
 
+    @media (max-width: $screen-sm) {
+      text-align: center;
+    }
+
+  }
+
+  @media (min-width: $screen-md) {
+
+    &:after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    width: 100%;
+    padding: 55px 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 940px;
+    padding: 55px 60px 55px 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }

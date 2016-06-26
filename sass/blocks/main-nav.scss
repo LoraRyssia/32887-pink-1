@@ -1,0 +1,47 @@
+//
+// Main nav
+// --------------------------------------------------
+
+.main-nav {
+
+    @media (min-width: $screen-lg) {
+      float: right;
+    }
+  
+  &__toggler {
+    float: none;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__menu-list {
+    display: none;
+    list-style: none;
+
+    li {
+
+      @media (min-width: $screen-lg) {
+        display: inline-block;
+        margin-right: 70px;
+      }
+
+      &:last-child {
+
+        @media (min-width: $screen-lg) {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        color: $color-white;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+  }
+
+}

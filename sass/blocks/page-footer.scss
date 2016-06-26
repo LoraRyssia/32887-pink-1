@@ -1,0 +1,78 @@
+//
+// Page-footer
+// --------------------------------------------------
+
+.page-footer {
+  padding-top: 30px;
+
+  &--main-page {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  &__wrap {
+
+    @media (min-width: $screen-sm) {
+      padding: 0 40px;
+
+      &:after {
+        display: table;
+        content: '';
+        clear: both;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+
+      &:after {
+        display: table;
+        content: '';
+        clear: both;
+      }
+    }
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      float: left;
+      width: 33%;
+    }
+  }
+
+  &__social {
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      float: left;
+      width: 33%;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      float: right;
+      width: 33%;
+      text-align: right;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+      padding: 35px 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 65px 0;
+    }
+}

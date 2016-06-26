@@ -9,23 +9,23 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrap">
-        <div class="page-header__top">
+      <div class="page-header__top">
+        <div class="page-header__wrap">
           <a class="page-header__logo" href="/">
-            <img src="img/logo.svg" width="" alt="Logo">
+            <img src="img/logo-pink-white-mobile.svg" width="" alt="Logo">
           </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggler" type="button">
+              <span>Меню</span>
+            </button>
+            <ul class="main-nav__menu-list">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/photos.html">Фотографии</a></li>
+              <li><a href="/competition.html">Конкурс</a></li>
+              <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggler" type="button">
-            <span>Меню</span>
-          </button>
-          <ul class="main-nav__menu-list">
-            <li><a href="/">Главная</a></li>
-            <li><a href="/photos.html">Фотографии</a></li>
-            <li><a href="/competition.html">Конкурс</a></li>
-            <li><a href="http://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="page-header__title">
         <h1 class="page-header__text">Конкурс на самое безбашеное путешествие с Пинк</h1>
@@ -33,24 +33,52 @@
     </header>
     <main>
       <div class="page-intro">
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <br><span class="page-intro__form-mob">Пожалуйста, заполните форму ниже:</span></p>
       </div>
       <form class="poll">
-        <fieldset class="poll__fset">
+        <div class="poll__top-lg">
+          <fieldset class="poll__fset poll__fset--personal">
+            <div class="input-text">
+              <label for="last-name">Фамилия:</label>
+              <input class="input-text__field" type="text" id="last-name" placeholder="Укажите фамилию">
+            </div>
+            <div class="input-text">
+              <label for="name">Имя:</label>
+              <input  class="input-text__field" type="text" id="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="input-text">
+              <label for="fname">Отчество:</label>
+              <input  class="input-text__field" type="text" id="fname" placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="poll__fset poll__fset--apps">
+            <legend>С каким приложением путешествовали?</legend>
+            <div class="radio">
+              <input class="radio__btn" type="radio" id="radio1" name="appl-choice" value="choice1">
+              <label for="radio1">Pink для iOS</label>
+            </div>
+            <div class="radio">
+              <input class="radio__btn" type="radio" id="radio2" name="appl-choice" value="choice2">
+              <label for="radio2">Pink на Android</label>
+            </div>
+            <div class="radio">
+              <input class="radio__btn" type="radio" id="radio3" name="appl-choice" value="choice3">
+              <label for="radio3">Windows Phone</label>
+            </div>
+          </fieldset>
+        </div>
+        <fieldset class="poll__fset poll__fset--md">
+          <legend>Контактная информация</legend>
           <div class="input-text">
-            <label for="last-name">Фамилия:</label>
-            <input class="input-text__field" type="text" id="last-name" placeholder="Укажите фамилию">
+            <input class="input-text__field" type="text" id="phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+            <label for="phone">номер телефона</label>
           </div>
           <div class="input-text">
-            <label for="name">Имя:</label>
-            <input  class="input-text__field" type="text" id="name" placeholder="Введите ваше имя">
-          </div>
-          <div class="input-text">
-            <label for="fname"></label>
-            <input  class="input-text__field" type="text" id="fname" placeholder="Ну и отчество тоже">
+            <input  class="input-text__field" type="email" id="email" placeholder="Введите почту">
+            <label for="email">Адрес почты</label>
           </div>
         </fieldset>
-        <fieldset class="poll__fset poll__fset--grey-bg">
+        <fieldset class="poll__fset poll__fset--grey-bg  poll__fset--achieves">
           <legend>Ваши безбашенные достижения в путешествии</legend>
           <div class="checkbox">
             <input class="checkbox__mark" type="checkbox" id="checkbox1" value="check1" checked>
@@ -77,7 +105,7 @@
             <label for="checkbox6">Разгромил отель</label>
           </div>
         </fieldset>
-        <fieldset class="poll__fset">
+        <fieldset class="poll__fset poll__fset--mob">
           <div class="input-text">
             <label for="phone">Номерок телефончика</label>
             <input class="input-text__field" type="text" id="phone" placeholder="Номер, пожалуйста">
@@ -87,7 +115,7 @@
             <input  class="input-text__field" type="email" id="email" placeholder="E-mail, пожалуйста">
           </div>
         </fieldset>
-        <fieldset class="poll__fset poll__fset--grey-bg">
+        <fieldset class="poll__fset poll__fset--grey-bg poll__fset--mob">
           <legend>С каким приложением путешествовали?</legend>
           <div class="radio">
             <input class="radio__btn" type="radio" id="radio1" name="appl-choice" value="choice1">
@@ -105,15 +133,17 @@
         <fieldset class="poll__fset">
           <legend>Опишите свои эмоции</legend>
           <textarea class="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          <input class="btn poll__submit" type="submit" name="form-submit" value="Отправить форму">
-          <p class="poll__detail">* — обязательные поля</p>
         </fieldset>
+        <div class="poll__btn">
+          <input class="btn poll__submit" type="submit" name="form-submit" value="Отправить форму">
+          <p class="poll__detail"><span>* — обязательные поля</span></p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrap">
         <p class="page-footer__logo">
-          <a class="logo logo--footer" href="/"><img src="img/logo.svg" width=""></a>
+          <a class="logo logo--footer" href="/"><img src="img/logo-pink-blue-mobile.svg" width=""></a>
         </p>
         <p class="page-footer__social">
           <span class="social-links">
@@ -123,7 +153,7 @@
           </span>
         </p>
         <p class="page-footer__copyright">
-          Разработано <a class="logo-copyright" href=""><img src="img/logo-small.svg"></a>
+          Разработано <a class="logo-copyright" href=""><img src="img/logo-htmlacademy.svg"></a>
         </p>
       </div>
     </footer>

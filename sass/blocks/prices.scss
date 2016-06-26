@@ -5,6 +5,19 @@
 .prices {
   padding: 60px 0 40px;
   background-color: $color-bg--grey;
+
+  &__wrap {
+
+    @media (min-width: $screen-sm) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .price-table {

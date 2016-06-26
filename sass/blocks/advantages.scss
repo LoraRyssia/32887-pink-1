@@ -3,46 +3,116 @@
 // --------------------------------------------------
 
 .advantages {
- 
 
   &__intro {
-    padding: 40px 0;
+    padding: 60px 0 40px;
     text-align: center;
 
-    span {
-      display: block;
+    p {
       font-weight: 300;
       font-size: $font-size-larger;
       line-height: 1.25em;
+
+      @media (min-width: $screen-sm) {
+        font-size: $font-heading-large;
+      }
+
+      @media (min-width: $screen-lg) {
+        font-size: $font-heading-larger;
+      }
     }
   }
 
+  &__bg {
+    background-color: $color-bg--grey;
+  }
+
   &__wrap {
-    
+
+    @media (min-width: $screen-sm) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+    }
   }
 
   &__list {
+    margin: 0;
     padding: 40px 0 280px;
     list-style: none;
-    background-color: $color-bg--grey;
     background-image: url(../img/iphone-screen-mobile@1x.png);
     background-repeat: no-repeat;
     background-position: center 120%;
+    text-align: justify;
+
+    @media (min-width: $screen-sm) {
+      padding: 30px 0 0;
+      padding-left: 50%;
+      background-image: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 940px;
+      padding: 0 130px;
+      margin: 0 auto;
+      background-image: none;
+    }
   }
 
   &__item {
     text-align: center;
-    margin-bottom: 30px;
+
+    @media (min-width: $screen-sm) {
+      text-align: left;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      vertical-align: top;
+      width: 32%;
+      padding: 0 4%;
+      padding-top: 340px;
+      box-sizing: border-box;
+    }
   }
 
   &__name {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: $font-size-large;
+
+    &--big {
+      margin-bottom: 20px;
+      font-size: $font-size-larger;
+      line-height: 1em;
+    }
   }
 
   &__descr {
-  
+    padding-bottom: 30px;
+  }
+
+  &__time {
+    display: none;
+
+    a {
+      text-decoration: underline;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      padding: 90px 0;
+      padding-left: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 40%;
+      padding-bottom: 105px;
+    }
   }
 }
 
