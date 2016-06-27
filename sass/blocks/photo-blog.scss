@@ -4,23 +4,17 @@
 
 .photo-blog {
 
-  &__wrap {
-    padding: 0 20px;
+}
 
-    @media (min-width: $screen-md) {
-      width: 620px;
-      padding: 0 40px;
-      margin: 0 auto;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
-    }
+  .photo-blog__wrap {
+    @include container-fluid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  &__slogan {
+  .photo-blog__slogan {
+    width: 100%;
     padding: 50px 0;
     line-height: 2.1em;
     text-align: center;
@@ -35,4 +29,3 @@
       padding: 45px 0px 65px;
     }
   }
-}

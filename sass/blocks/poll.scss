@@ -4,9 +4,15 @@
 
 
 .poll {
+  @include container-fluid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 40px;
+}
 
-  &__fset {
+
+  .poll__fset {
     width: 100%;
     margin-bottom: 50px;
     padding: 0 20px;
@@ -24,32 +30,13 @@
       
     }
 
-    &--mob {
-
-      @media (min-width: $screen-sm) {
-        display: none;
-      }
-    }
-
-     &--md {
-
-      @media (max-width: $screen-sm) {
-        display: none;
-      }
-    }
-
-    &--grey-bg {
-      @media (max-width: $screen-md) {
-        background-color: $color-bg--grey;
-      }
-    }
-
     &--personal {
 
       @media (min-width: $screen-md) {
         border-width: 0;
         border-radius: 0;
         padding: 0;
+        order: -3;
       }
 
       @media (min-width: $screen-lg) {
@@ -62,15 +49,26 @@
 
     &--apps {
 
-      @media (max-width: $screen-md) {
-        display: none;
+      @media (min-width: $screen-md) {
+        order: -2;
       }
 
       @media (min-width: $screen-lg) {
-        float: right;
         width: 49%;
       }
     }
+
+    &--contacts {
+
+      @media (min-width: $screen-md) {
+        order: -1;
+      }
+
+      @media (min-width: $screen-lg) {
+
+      }
+    }
+
 
     legend {
       padding: 0px;
@@ -86,53 +84,27 @@
     }
   }
 
-  &__top-lg {
+  .poll__top-lg {
 
-    &:after {
-
-      @media (min-width: $screen-lg) {
-        display: table;
-        content: '';
-        clear: both;
-      }
-    }
   }
 
-  &__btn {
-    padding: 0 20px;
-
-    &:after {
-
-      @media (min-width: $screen-md) {
-        display: table;
-        content: none;
-        clear: both;
-      }
-    }
+  .poll__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__submit {
+  .poll__submit {
 
     @media (min-width: $screen-md) {
-      float: left;
+      
     }
   }
 
-&__detail {
+  .poll__detail {
 
     @media (min-width: $screen-md) {
-      float: right;
+      
     }
   }
 
-  @media (min-width: $screen-md) {
-    width: 620px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $screen-lg) {
-    width: 940px;
-    padding: 0 130px;
-    margin: 0 auto;
-  }
-}

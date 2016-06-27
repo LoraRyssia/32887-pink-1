@@ -4,19 +4,27 @@
 
 .photo-edit {
   padding: 20px 0 40px;
-  background-color: $color-bg--grey;
+}
 
-  &__wrap {
-    padding: 0 20px;
+  .photo-edit__wrap {
+    @include container-fluid;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-bg--grey;
 
     @media (min-width: $screen-md) {
-      width: 620px;
-      margin: 0 auto;
+      flex-direction: row;
+      padding: 55px 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 55px 60px 55px 80px;
+      box-sizing: border-box;
     }
   }
 
 
-  &__img {
+  .photo-edit__img {
     text-align: center;
 
     @media (min-width: $screen-md) {
@@ -38,55 +46,27 @@
     }
   }
 
-  &__panel {
-
-    @media (max-width: $screen-sm) {
-      text-align: center;
-    }
+  .photo-edit__panel {
+    width: 100%;
+    text-align: center;
 
     @media (min-width: $screen-md) {
-      float: right;
       width: 45%;
     }
   }
 
-  &__tools {
+  .photo-edit__tools {
+    text-align: center;
 
-    @media (max-width: $screen-sm) {
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
+  }
+
+  .photo-edit__range {
+
+  }
+
+  .photo-edit__btns {
       text-align: center;
-    }
   }
-
-  &__range {
-
-  }
-
-  &__btns {
-
-    @media (max-width: $screen-sm) {
-      text-align: center;
-    }
-
-  }
-
-  @media (min-width: $screen-md) {
-
-    &:after {
-      display: table;
-      content: '';
-      clear: both;
-    }
-  }
-
-  @media (min-width: $screen-md) {
-    width: 100%;
-    padding: 55px 0;
-  }
-
-  @media (min-width: $screen-lg) {
-    width: 940px;
-    padding: 55px 60px 55px 80px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-}

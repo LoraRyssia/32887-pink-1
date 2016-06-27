@@ -5,20 +5,12 @@
 .prices {
   padding: 60px 0 40px;
   background-color: $color-bg--grey;
-
-  &__wrap {
-
-    @media (min-width: $screen-sm) {
-      padding: 0 40px;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
-    }
-  }
 }
+
+  .prices__wrap {
+    @include container-fluid;
+  }
+
 
 .price-table {
   text-transform: uppercase;
@@ -29,7 +21,12 @@
     background-color: $color-dark2;
   }
 
-  &__header {
+  td {
+    border: 2px solid $border-color;
+  }
+}
+
+  .price-table__header {
     border: 2px solid $border-color;
 
     &--hit {
@@ -37,11 +34,8 @@
     }
   }
 
-  td {
-    border: 2px solid $border-color;
-  }
+  
 
-}
 
 .price-yes,
 .price-no {

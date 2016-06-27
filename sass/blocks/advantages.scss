@@ -4,7 +4,8 @@
 
 .advantages {
 
-  &__intro {
+}
+  .advantages__intro {
     padding: 60px 0 40px;
     text-align: center;
 
@@ -13,7 +14,7 @@
       font-size: $font-size-larger;
       line-height: 1.25em;
 
-      @media (min-width: $screen-sm) {
+      @media (min-width: $screen-md) {
         font-size: $font-heading-large;
       }
 
@@ -23,50 +24,42 @@
     }
   }
 
-  &__bg {
+  .advantages__bg {
     background-color: $color-bg--grey;
   }
 
-  &__wrap {
-
-    @media (min-width: $screen-sm) {
-      padding: 0 40px;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
-    }
+  .advantages__wrap {
+    @include container-fluid;
   }
 
-  &__list {
-    margin: 0;
-    padding: 40px 0 280px;
+  .advantages__list {
+    @include container-fluid;
+    padding-bottom: 280px;
     list-style: none;
     background-image: url(../img/iphone-screen-mobile@1x.png);
     background-repeat: no-repeat;
     background-position: center 120%;
     text-align: justify;
+    box-sizing: border-box;
 
-    @media (min-width: $screen-sm) {
-      padding: 30px 0 0;
-      padding-left: 50%;
+    @media (min-width: $screen-md) {
+      padding-top: 30px;
+      padding-left: 43%;
+      padding-bottom: 0;
       background-image: none;
     }
 
     @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
+      padding-top: 0;
+      padding-left: 0;
       background-image: none;
     }
   }
 
-  &__item {
+  .advantages__item {
     text-align: center;
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-md) {
       text-align: left;
     }
 
@@ -76,11 +69,12 @@
       width: 32%;
       padding: 0 4%;
       padding-top: 340px;
+      text-align: center;
       box-sizing: border-box;
     }
   }
 
-  &__name {
+  .advantages__name {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: $font-size-large;
@@ -92,27 +86,27 @@
     }
   }
 
-  &__descr {
+  .advantages__descr {
     padding-bottom: 30px;
   }
 
-  &__time {
+  .advantages__time {
     display: none;
 
     a {
       text-decoration: underline;
     }
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-md) {
       display: block;
       padding: 90px 0;
       padding-left: 50%;
     }
 
     @media (min-width: $screen-lg) {
-      padding-left: 40%;
+      padding-left: 39%;
       padding-bottom: 105px;
     }
   }
-}
+
 

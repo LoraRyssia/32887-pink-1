@@ -11,13 +11,11 @@
     <header class="page-header page-header--main-page">
       <div class="page-header__top">
         <div class="page-header__wrap">
-          <a class="page-header__logo" href="/">
-            <img src="img/logo-pink-white-mobile.svg" width="" alt="Logo">
-          </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggler" type="button">
-              <span>Меню</span>
-            </button>
+          <div class="page-header__logo">
+            <a href="/"><img src="img/logo-pink-white-mobile.svg" width="" alt="Logo"></a>
+          </div>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggler" type="button">Меню</button>
             <ul class="main-nav__menu-list">
               <li><a href="/">Главная</a></li>
               <li><a href="/photos.html">Фотографии</a></li>
@@ -144,7 +142,7 @@
             <span>Звоните:</span><br>
             <a href="tel:7-812-555-6666">+7 (812) 555-66-66</a>
           </p>
-          <p class="contacts__detail">
+          <p class="contacts__detail contacts__detail--mail">
             <span>Пишите:</span><br>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
@@ -174,5 +172,6 @@
         </div>
       </footer>
     </main>
+    <script type="text/javascript" src="/js/mobile-menu.js"></script>
   </body>
 </html>

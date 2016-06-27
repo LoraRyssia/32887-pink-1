@@ -5,18 +5,18 @@
 .promo {
   text-align: center;
 
-  @media (min-width: $screen-sm) {
-    float: left;
+  @media (min-width: $screen-md) {
     width: 285px;
     padding-top: 100px;
     box-sizing: border-box;
-    }
-  
-  &__slogan {
+  }
+}
+
+  .promo__slogan {
     display: none;
     font-weight: 300;
 
-    @media (min-width: $screen-sm) {
+    @media (min-width: $screen-md) {
       display: block;
       margin-bottom: 30px;
       font-size: $font-heading-large;
@@ -28,4 +28,4 @@
       font-size: $font-heading-larger;
     }
   }
-}
+

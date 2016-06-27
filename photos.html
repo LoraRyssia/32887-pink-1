@@ -11,13 +11,11 @@
     <header class="page-header">
       <div class="page-header__top">
         <div class="page-header__wrap">
-          <a class="page-header__logo" href="/">
-            <img src="img/logo-pink-white-mobile.svg" width="" alt="Logo">
-          </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggler" type="button">
-              <span>Меню</span>
-            </button>
+          <div class="page-header__logo">
+            <a href="/"><img src="img/logo-pink-white-mobile.svg" width="" alt="Logo"></a>
+          </div>
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggler" type="button">Меню</button>
             <ul class="main-nav__menu-list">
               <li><a href="/">Главная</a></li>
               <li><a href="/photos.html">Фотографии</a></li>
@@ -44,8 +42,8 @@
           <div class="photo-blog__wrap">
             <div class="photo__info photo__info--featured">
               <div class="photo__author">Анна <time class="photo__date" datetime="">(5 минут назад)</time></div>
-              <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-              <div class="photo__meta">
+              <p class="photo__comment photo__comment--featured">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+              <div class="photo__meta photo__meta--featured">
                 <div class="like">
                   <a class="like__counter"><i class="icon icon--heart"></i></a> Нравится: <span class="like__result">215</span>
                 </div>
@@ -186,5 +184,6 @@
         </div>
       </footer>
     </main>
+    <script type="text/javascript" src="/js/mobile-menu.js"></script>
   </body>
 </html>

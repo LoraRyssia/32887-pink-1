@@ -3,23 +3,19 @@
 // --------------------------------------------------
 
 .contacts {
-    padding: 40px 0 0 0;
-    text-align: center;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
 
-  &__wrap {
-
-    @media (min-width: $screen-sm) {
-      padding: 0 40px;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
-    }
+  .contacts__wrap {
+    @include container-fluid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
-  &__title {
+  .contacts__title {
+    width: 100%;
     margin-bottom: 30px;
     text-align: center;
     font-weight: 300;
@@ -28,29 +24,30 @@
 
     @media (min-width: $screen-sm){
       margin-bottom: 40px;
-      font-size: 40px;
+      font-size: $font-heading-large;
     }
 
     @media (min-width: $screen-lg) {
-      font-size: 50px;
+      font-size: $font-heading-larger;
     }
   }
 
-  &__detail {
+  .contacts__detail {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
     font-weight: 300;
     font-size: $font-size-larger;
     color: $color-pink;
 
-    @media (min-width: $screen-sm) {
-      display: inline-block;
-      vertical-align: top;
+    @media (min-width: $screen-md) {
       width: 45%;
-      margin-bottom: 35px;
+      margin-bottom: 45px;
       text-align: center;
     }
 
     @media (min-width: $screen-lg) {
-      width: 33%;
+      width: 30%;
       text-align: center;
     }
 
@@ -62,9 +59,16 @@
       line-height: 1.7em;
       color: $font-color-base;
     }
+
+    &--mail {
+      @media (min-width: $screen-lg) {
+        order: 2;
+      }
+    }
+
   }
 
-  &__map {
+  .contacts__map {
     height: 235px;
     text-align: center;
     background-image: url(../img/bg-map-mobile@1x.png);
@@ -79,4 +83,3 @@
       height: 500px;
     }
   }
-}

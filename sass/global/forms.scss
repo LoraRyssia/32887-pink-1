@@ -10,8 +10,9 @@
     color: $color-pink;
     text-transform: uppercase;
   }
+}
 
-  &__field {
+  .input-text__field {
     font-size: $font-size-large;
     line-height: 1.7em;
     color: $color-dark2;
@@ -22,7 +23,6 @@
       color: $color-dark2;
     }
   }
-}
 
 .checkbox {
 
@@ -30,20 +30,20 @@
     font-size: $font-size-large;
     line-height: 1.7em;
   }
+}
 
-  &__mark {
+  .checkbox__mark {
 
   }
-}
 
 .radio {
   
-  &__btn {
-
-  }
-
   label {
     font-size: $font-size-large;
     line-height: 1.7em;
   }
 }
+
+  .radio__btn {
+
+  }

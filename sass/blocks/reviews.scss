@@ -4,29 +4,21 @@
 
 .reviews {
   padding: 40px 0;
+}
 
-  &__wrap {
-  
-    @media (min-width: $screen-sm) {
-      padding: 0 40px;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 940px;
-      padding: 0 130px;
-      margin: 0 auto;
-    }
+  .reviews__wrap {
+    @include container-fluid;
   }
 
-  &__items {
+  .reviews__items {
     text-align: center;
   }
 
-  &__item {
+  .reviews__item {
 
   }
 
-  &__author {
+  .reviews__author {
     margin-bottom: 10px;
     font-style: normal;
     font-weight: 700;
@@ -34,7 +26,3 @@
     line-height: 1.7em;
   }
 
-  p {
-
-  }
-}

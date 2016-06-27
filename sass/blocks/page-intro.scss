@@ -23,12 +23,12 @@
       line-height: 1.7em;
     }
   }
+}
 
-  &__form-mob {
+  .page-intro__form-mob {
     display: none;
 
     @media (min-width: $screen-md) {
       display: inline;
     }
   }
-}
